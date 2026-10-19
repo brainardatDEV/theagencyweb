@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book a Consultation — The Renaissance Agency Limited</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#15140F;--soft:#3A382F;--parch:#F6F3EA;--dim:#EFEBDF;--brass:#A9834E;--deep:#7C5E34;--pale:#D8C39C;--stone:#8B8579;--line:#DCD5C3;--white:#FFFDF8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--parch);color:var(--ink);font:400 16px/1.65 Inter,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.w{max-width:1180px;margin:0 auto;padding:0 28px}@media(max-width:560px){.w{padding:0 18px}}
+h1,h2,h3,b.sf{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1}
+.mono{font:500 11px 'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase}
+:focus-visible{outline:2px solid var(--deep);outline-offset:3px}
+header{position:fixed;inset:0 0 auto;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 40px;color:var(--parch);transition:background .3s,color .3s}
+header.s{background:rgba(246,243,234,.94);color:var(--ink);border-bottom:1px solid var(--line)}
+.brand{font:500 19px 'Cormorant Garamond',serif;letter-spacing:.06em}.brand i{font-weight:400}
+.wa{border:1px solid currentColor;padding:10px 18px;min-height:44px;display:inline-flex;align-items:center;transition:.25s}.wa:hover{background:var(--brass);border-color:var(--brass);color:var(--ink)}
+@media(max-width:560px){header{padding:14px 18px}.brand{font-size:16px}}
+/* hero: flat matte ink + drone video */
+.hero{position:relative;background:var(--ink);color:var(--parch);padding:170px 0 80px;overflow:hidden}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+.hero:after{content:"";position:absolute;inset:0;background:rgba(21,20,15,.45)}
+.hero .w{position:relative;z-index:2}
+h1{font-size:clamp(50px,9vw,128px);letter-spacing:-.02em;max-width:900px}h1 i{color:var(--pale)}
+.hero p{max-width:500px;margin-top:24px;color:#D9D5C6}
+.facts{display:flex;gap:44px;flex-wrap:wrap;margin-top:54px;padding-top:24px;border-top:1px solid rgba(246,243,234,.25)}
+.facts b{display:block;font:500 30px 'Cormorant Garamond',serif;color:var(--pale)}.facts span{color:#C9C4B4}
+@media(max-width:560px){.hero{padding:120px 0 56px}.facts{gap:26px}}
+/* booking */
+main{padding:90px 0 110px}
+.bk{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}@media(max-width:960px){.bk{grid-template-columns:1fr}}
+.wz{background:var(--white);border:1px solid var(--line)}
+.pb{display:flex}.pb i{flex:1;height:3px;background:var(--line);transition:background .4s}.pb i.on{background:var(--brass)}
+.wb{padding:40px 38px;min-height:390px}@media(max-width:560px){.wb{padding:28px 18px}}
+.wb h2{font-size:36px;margin-bottom:8px}.wb .n{color:var(--stone);font-size:14px;margin-bottom:26px}
+.stp{display:none}.stp.on{display:block;animation:in .45s ease}@keyframes in{from{opacity:0;transform:translateX(16px)}}
+.og{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:560px){.og{grid-template-columns:1fr}}
+.op{border:1px solid var(--line);padding:18px;text-align:left;background:var(--parch);transition:border-color .2s,background .2s;min-height:48px}
+.op:hover{border-color:var(--brass)}.op.sel{border-color:var(--ink);background:var(--dim);box-shadow:inset 0 0 0 1px var(--ink)}
+.op b{display:block;font:500 21px 'Cormorant Garamond',serif}.op small{color:var(--stone);font-size:12.5px;display:block;line-height:1.4;margin-top:2px}
+.op em{display:block;margin-top:8px;font:500 12px 'JetBrains Mono',monospace;font-style:normal;color:var(--deep)}
+.days{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:14px}.days .op{flex:0 0 auto;text-align:center;padding:12px 16px}.days b{font-size:20px}
+.sl{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.sl .op{text-align:center;padding:14px 6px}.sl b{font-size:19px}
+.fd{margin-bottom:14px}.fd label{display:block;margin-bottom:6px;color:var(--deep)}.fd input,.fd textarea{width:100%;padding:13px;border:1px solid var(--line);background:var(--parch);color:var(--ink);font:inherit;font-size:15px}
+.fd input:focus,.fd textarea:focus{outline:2px solid var(--brass);outline-offset:1px}
+.sm{border:1px solid var(--line);padding:4px 16px;margin-bottom:20px;font-size:14px}.sm div{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--line)}.sm div:last-child{border:0}.sm span:first-child{color:var(--stone)}
+.wf{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px 38px;border-top:1px solid var(--line)}@media(max-width:560px){.wf{padding:16px 18px}}
+.fee{font-size:12px;color:var(--stone)}.fee b{display:block;font:500 30px 'Cormorant Garamond',serif;color:var(--deep);line-height:1.1}
+.back{color:var(--stone);font-size:13px;min-height:44px}
+.b{background:var(--ink);color:var(--parch);min-height:50px;padding:0 26px;font:500 12px 'JetBrains Mono',monospace;letter-spacing:.06em;text-transform:uppercase;transition:background .25s}
+.b:hover{background:var(--deep)}.b:disabled{background:var(--stone);opacity:.5;cursor:not-allowed}
+.done{text-align:center;padding:30px 0}.done h2{margin-bottom:10px}
+/* expect video */
+.vd{position:sticky;top:96px}
+.vf{aspect-ratio:16/10;background:var(--ink);border:1px solid var(--line);overflow:hidden}.vf video{width:100%;height:100%;object-fit:cover;display:block}
+.vd h3{font-size:30px;margin:22px 0 8px}.vd p{color:var(--soft);font-size:14.5px}
+.vd ul{list-style:none;margin-top:18px}.vd li{padding:11px 0;border-top:1px solid var(--line);font-size:14px;display:flex;gap:12px}.vd li span{color:var(--brass);font-family:'JetBrains Mono',monospace;font-size:12px;padding-top:2px}
+footer{background:var(--ink);color:var(--parch);padding:56px 0 28px}
+.fg{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;padding-bottom:34px;border-bottom:1px solid #3A382F}
+.fg a,.fg p{display:block;color:#D9D5C6;font-size:14px;margin-bottom:8px}.fg a:hover{color:var(--pale)}
+.fg .q{font:italic 500 28px/1.15 'Cormorant Garamond',serif;color:var(--pale);max-width:340px}
+.fb{padding-top:22px;font-size:12px;color:var(--stone);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header id="hd"><a href="#top" class="brand">THE RENAISSANCE <i>Agency</i></a><a class="wa mono" href="https://wa.me/2347041365302" target="_blank" rel="noopener">WhatsApp us</a></header>
+
+<section class="hero" id="top">
+  <!-- Drone clip: videos/construction-drone.mp4 (6–15s, 720p, audio removed) + images/hero-poster.jpg -->
+  <video id="hv" autoplay muted loop playsinline preload="metadata"><source src="videos/construction-drone.mp4" type="video/mp4"></video>
+  <div class="w">
+    <h1>Book a <i>consultation.</i></h1>
+    <p>Tell us about your project in four quick steps. We’ll confirm your slot on WhatsApp.</p>
+    <div class="facts">
+      <div><b>From ₦50,000</b><span class="mono">Fee scales with project size</span></div>
+      <div><b>Deducted</b><span class="mono">From your project if you proceed</span></div>
+      <div><b>24 hours</b><span class="mono">Response after booking</span></div>
+    </div>
+  </div>
+</section>
+
+<main><div class="w"><div class="bk">
+  <div class="wz">
+    <div class="pb" id="pb"><i></i><i></i><i></i><i></i></div>
+    <div class="wb" id="wb">
+      <div class="stp" data-s="0"><h2>What are we working on?</h2><p class="n">Choose the discipline that fits.</p><div class="og" id="o0"></div></div>
+      <div class="stp" data-s="1"><h2>How big is the project?</h2><p class="n">This sets your consultation fee.</p><div class="og" id="o1"></div></div>
+      <div class="stp" data-s="2"><h2>Pick a time</h2><p class="n">Choose a day, then a time. We confirm the exact slot on WhatsApp.</p><div class="days" id="od"></div><div class="sl" id="ot"></div></div>
+      <div class="stp" data-s="3"><h2>Confirm your details</h2><p class="n">Check your booking, then send it.</p>
+        <div class="sm" id="sm"></div>
+        <div class="fd"><label class="mono" for="nm">Full name</label><input id="nm" autocomplete="name"></div>
+        <div class="fd"><label class="mono" for="ph">Phone / WhatsApp</label><input id="ph" type="tel" autocomplete="tel"></div>
+        <div class="fd"><label class="mono" for="nt">Project notes (optional)</label><textarea id="nt" rows="3" placeholder="Location, timeline, anything we should know"></textarea></div>
+      </div>
+      <div class="stp done" data-s="4"><h2>Almost done.</h2><p class="n">Your booking opened in WhatsApp. Press send there to lock it in. If it didn’t open, message us on +234 070 4136 5302.</p></div>
+    </div>
+    <div class="wf" id="wf"><button class="back" id="bkb" type="button">← Back</button><div class="fee">Estimated fee<b id="fee">₦50,000+</b></div><button class="b" id="nx" type="button" disabled>Continue</button></div>
+  </div>
+
+  <aside class="vd">
+    <!-- Meeting clip: videos/what-to-expect.mp4 + images/expect-poster.jpg -->
+    <div class="vf"><video controls preload="none" playsinline poster="images/expect-poster.jpg"><source src="videos/what-to-expect.mp4" type="video/mp4"></video></div>
+    <h3>What to expect</h3>
+    <p>A focused conversation about your space, your goals and your budget.</p>
+    <ul>
+      <li><span>1</span>We review your site, scale and goals together.</li>
+      <li><span>2</span>We scope the project and outline next steps.</li>
+      <li><span>3</span>Your fee is deducted from the project if you go ahead.</li>
+    </ul>
+  </aside>
+</div></div></main>
+
+<footer><div class="w">
+  <div class="fg">
+    <p class="q">“Creativity is the reason for our existence.”</p>
+    <div><a href="tel:+2347041365302">+234 070 4136 5302</a><a href="https://wa.me/2347041365302" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:therenaissanceagencylimited@gmail.com">therenaissanceagencylimited@gmail.com</a><p>Abuja, Nigeria</p></div>
+    <div><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/1MKXdVPAzq/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/in/the-agency-7102a3362" target="_blank" rel="noopener">LinkedIn</a><a href="https://pin.it/5C9rncmtP" target="_blank" rel="noopener">Pinterest</a></div>
+  </div>
+  <div class="fb"><span>© 2026 The Renaissance Agency Limited. All rights reserved.</span><span>Excellence. Precision. Experience.</span></div>
+</div></footer>
+
+<script>
+const $=(q,e=document)=>e.querySelector(q),$$=(q,e=document)=>[...e.querySelectorAll(q)];
+if(matchMedia('(prefers-reduced-motion:reduce)').matches)$('#hv').pause();
+addEventListener('scroll',()=>$('#hd').classList.toggle('s',scrollY>innerHeight*.5),{passive:true});
+const TY=[['Construction','New builds and renovations'],['Interior Design','Spaces designed inside'],['Exterior Design','Façades, gardens and grounds'],['Full property','Build plus design, start to finish']];
+const SC=[['Single room','One space or room',50000],['Apartment or home','Full interior or exterior',100000],['Large home or commercial','Multi-floor or commercial',175000],['Estate or multi-site','Estates and developments',250000]];
+const TM=['10:00 AM','1:00 PM','4:00 PM'],ng=n=>'₦'+n.toLocaleString('en-NG');
+const S={t:null,s:null,d:null,m:null};let n=0;
+const card=(a,i,fee)=>`<button type="button" class="op" data-i="${i}"><b>${a[0]}</b><small>${a[1]}</small>${fee?`<em>${ng(a[2])}</em>`:''}</button>`;
+$('#o0').innerHTML=TY.map((a,i)=>card(a,i)).join('');$('#o1').innerHTML=SC.map((a,i)=>card(a,i,1)).join('');
+const days=[];for(let k=1;days.length<7;k++){const d=new Date(Date.now()+864e5*k);if(d.getDay())days.push(d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'}))}
+$('#od').innerHTML=days.map((d,i)=>`<button type="button" class="op" data-i="${i}"><b>${d}</b></button>`).join('');
+$('#ot').innerHTML=TM.map((t,i)=>`<button type="button" class="op" data-i="${i}"><b>${t}</b></button>`).join('');
+[['o0','t'],['o1','s'],['od','d'],['ot','m']].forEach(([id,k])=>$('#'+id).addEventListener('click',e=>{const b=e.target.closest('.op');if(!b)return;$$('.op',$('#'+id)).forEach(x=>x.classList.remove('sel'));b.classList.add('sel');S[k]=+b.dataset.i;if(k==='s')$('#fee').textContent=ng(SC[S.s][2]);render()}));
+const ok=()=>n===0?S.t!==null:n===1?S.s!==null:n===2?S.d!==null&&S.m!==null:$('#nm').value.trim()&&$('#ph').value.trim().length>6;
+function render(){$$('.stp').forEach(s=>s.classList.toggle('on',+s.dataset.s===n));$$('#pb i').forEach((i,k)=>i.classList.toggle('on',k<=Math.min(n,3)));
+ $('#wf').style.display=n===4?'none':'flex';$('#bkb').style.visibility=n?'visible':'hidden';$('#nx').textContent=n===3?'Send on WhatsApp':'Continue';$('#nx').disabled=!ok();
+ if(n===3)$('#sm').innerHTML=[['Project',TY[S.t][0]],['Scale',SC[S.s][0]],['Preferred time',days[S.d]+', '+TM[S.m]],['Consultation fee',ng(SC[S.s][2])]].map(r=>`<div><span>${r[0]}</span><span>${r[1]}</span></div>`).join('')}
+['nm','ph'].forEach(i=>$('#'+i).addEventListener('input',render));
+$('#bkb').onclick=()=>{n--;render()};
+$('#nx').onclick=()=>{if(n<3){n++;render();$('#wb').scrollIntoView({block:'nearest'});return}
+ const m=`Hello Renaissance Agency, I’d like to book a consultation.\nName: ${$('#nm').value}\nPhone: ${$('#ph').value}\nProject: ${TY[S.t][0]}\nScale: ${SC[S.s][0]}\nPreferred time: ${days[S.d]}, ${TM[S.m]}\nEstimated fee: ${ng(SC[S.s][2])}\nNotes: ${$('#nt').value||'None'}`;
+ open('https://wa.me/2347041365302?text='+encodeURIComponent(m),'_blank');n=4;render()};
+render();
+</script>
+</body>
+</html>
