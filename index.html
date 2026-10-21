@@ -2,152 +2,356 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Book a Consultation — The Renaissance Agency Limited</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Book an estimate or design consultation with The Renaissance Agency Limited, Abuja. Construction, interior and exterior design across Nigeria.">
+<meta name="theme-color" content="#14130F">
+<meta property="og:title" content="The Renaissance Agency Limited — Book a Consultation"><meta property="og:description" content="Estimate and design consultations for construction, interiors and exteriors. Based in Lugbe, Abuja."><meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314130F'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23E6D2A8' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"The Renaissance Agency Limited","telephone":"+2347041365302","email":"therenaissanceagencylimited@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Lugbe, Abuja","addressCountry":"NG"},"areaServed":"Nigeria","description":"Construction, interior design and exterior design consultations."}</script>
+<title>The Renaissance Agency Limited — Book a Consultation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#15140F;--soft:#3A382F;--parch:#F6F3EA;--dim:#EFEBDF;--brass:#A9834E;--deep:#7C5E34;--pale:#D8C39C;--stone:#8B8579;--line:#DCD5C3;--white:#FFFDF8}
+:root{--ink:#14130F;--mute:#6B675C;--sand:#F3EFE4;--line:rgba(20,19,15,.12);--acc:#B08D57;--accd:#7E5F33;--pale:#E6D2A8;--red:#C62828;--ok:#2E7D4F;--r:26px}
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--parch);color:var(--ink);font:400 16px/1.65 Inter,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-.w{max-width:1180px;margin:0 auto;padding:0 28px}@media(max-width:560px){.w{padding:0 18px}}
-h1,h2,h3,b.sf{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1}
-.mono{font:500 11px 'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase}
-:focus-visible{outline:2px solid var(--deep);outline-offset:3px}
-header{position:fixed;inset:0 0 auto;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:18px 40px;color:var(--parch);transition:background .3s,color .3s}
-header.s{background:rgba(246,243,234,.94);color:var(--ink);border-bottom:1px solid var(--line)}
-.brand{font:500 19px 'Cormorant Garamond',serif;letter-spacing:.06em}.brand i{font-weight:400}
-.wa{border:1px solid currentColor;padding:10px 18px;min-height:44px;display:inline-flex;align-items:center;transition:.25s}.wa:hover{background:var(--brass);border-color:var(--brass);color:var(--ink)}
-@media(max-width:560px){header{padding:14px 18px}.brand{font-size:16px}}
-/* hero: flat matte ink + drone video */
-.hero{position:relative;background:var(--ink);color:var(--parch);padding:170px 0 80px;overflow:hidden}
-.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
-.hero:after{content:"";position:absolute;inset:0;background:rgba(21,20,15,.45)}
-.hero .w{position:relative;z-index:2}
-h1{font-size:clamp(50px,9vw,128px);letter-spacing:-.02em;max-width:900px}h1 i{color:var(--pale)}
-.hero p{max-width:500px;margin-top:24px;color:#D9D5C6}
-.facts{display:flex;gap:44px;flex-wrap:wrap;margin-top:54px;padding-top:24px;border-top:1px solid rgba(246,243,234,.25)}
-.facts b{display:block;font:500 30px 'Cormorant Garamond',serif;color:var(--pale)}.facts span{color:#C9C4B4}
-@media(max-width:560px){.hero{padding:120px 0 56px}.facts{gap:26px}}
+html,body{height:100%}body{background:var(--ink);color:#fff;font:400 16px/1.6 Inter,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.lock{overflow:hidden}
+button,a{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}input,select,textarea{font:inherit}
+:focus-visible{outline:2px solid var(--pale);outline-offset:3px}
+.serif{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.02}
+.cap{font:600 11px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+/* matte grain over everything */
+body:after{content:"";position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.07;mix-blend-mode:overlay;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+/* glass (matte frosted) */
+.glass{background:rgba(255,255,255,.09);-webkit-backdrop-filter:blur(26px) saturate(125%);backdrop-filter:blur(26px) saturate(125%);border:1px solid rgba(255,255,255,.16);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 24px 60px -24px rgba(0,0,0,.55)}
+.pill{border-radius:999px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 30px;border-radius:999px;font-weight:600;font-size:14px;background:var(--sand);color:var(--ink);transition:transform .35s cubic-bezier(.3,1.4,.5,1),background .25s}
+.btn:hover{transform:translateY(-2px) scale(1.02);background:#fff}.btn:active{transform:scale(.97)}
+.btn.g{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.28);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}.btn.g:hover{background:rgba(255,255,255,.2)}
+.btn.dk{background:var(--ink);color:#fff}.btn.dk:hover{background:var(--accd)}.btn:disabled{background:rgba(20,19,15,.15);color:rgba(20,19,15,.4);cursor:not-allowed;transform:none}
+
+/* LANDING */
+.hero{position:fixed;inset:0;overflow:hidden;background:var(--ink)}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(20,19,15,.55),rgba(20,19,15,.2) 40%,rgba(20,19,15,.85))}
+.blob{position:absolute;z-index:1;border-radius:50%;filter:blur(70px);opacity:.35;background:radial-gradient(circle,var(--acc),transparent 70%);animation:dr 20s ease-in-out infinite alternate}
+.b1{width:48vw;height:48vw;left:-12vw;top:-10vw}.b2{width:40vw;height:40vw;right:-10vw;bottom:-8vw;animation-delay:-8s;animation-duration:26s}
+@keyframes dr{to{transform:translate(8vw,6vw) scale(1.15)}}
+nav{position:fixed;z-index:10;top:18px;left:50%;transform:translateX(-50%);width:min(960px,calc(100% - 28px));display:flex;justify-content:space-between;align-items:center;padding:8px 8px 8px 24px}
+.brand{font:500 18px 'Cormorant Garamond',serif;letter-spacing:.08em}.brand i{font-weight:400}
+.nl{display:flex;gap:6px;align-items:center}.nl button.l{padding:0 16px;min-height:44px;font-size:14px;color:#E8E4D6;border-radius:999px;transition:.25s}.nl button.l:hover{background:rgba(255,255,255,.12)}
+.nl .btn{min-height:46px;padding:0 22px}
+@media(max-width:620px){nav{padding-left:16px}.brand{font-size:14px}.nl button.l{display:none}.nl .btn{padding:0 16px;font-size:13px}}
+.main{position:relative;z-index:2;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;max-width:1160px;margin:0 auto;padding:120px 28px 34px}
+h1{font-size:clamp(52px,9.5vw,132px);letter-spacing:-.03em;max-width:980px}h1 i{color:var(--pale)}
+.sub{max-width:520px;margin-top:22px;color:#E2DECF;font-size:17px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:44px}
+.chip{padding:16px 22px;border-radius:20px;min-width:170px}.chip b{display:block;font:500 26px 'Cormorant Garamond',serif;color:var(--pale);line-height:1.1}.chip span{font-size:12px;color:#D4D0C2}
+.contact{margin-top:22px;font-size:13px;color:#BDB8A8;display:flex;gap:18px;flex-wrap:wrap}.contact a:hover{color:var(--pale)}
+@media(max-width:620px){.main{padding:100px 18px 22px}.sub{font-size:15.5px}.chip{min-width:0;flex:1 1 calc(50% - 6px);padding:12px 16px}.chips{margin-top:30px}}
+
+/* OVERLAY PANELS (hidden until opened) */
+.ov{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;background:rgba(20,19,15,.35);-webkit-backdrop-filter:blur(0);backdrop-filter:blur(0);opacity:0;transition:opacity .4s,backdrop-filter .5s,-webkit-backdrop-filter .5s}
+.ov[hidden]{display:none}.ov.in{opacity:1;-webkit-backdrop-filter:blur(22px);backdrop-filter:blur(22px)}
+.sheet{position:relative;width:100%;max-height:calc(100vh - 40px);border-radius:var(--r);overflow:hidden;transform:translateY(28px) scale(.97);opacity:0;transition:transform .55s cubic-bezier(.2,1.1,.3,1),opacity .4s}
+.ov.in .sheet{transform:none;opacity:1}
+.sheet.lite{background:rgba(243,239,228,.86);-webkit-backdrop-filter:blur(30px) saturate(120%);backdrop-filter:blur(30px) saturate(120%);color:var(--ink);border:1px solid rgba(255,255,255,.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 40px 90px -30px rgba(0,0,0,.6)}
+.x{position:absolute;top:14px;right:14px;z-index:5;width:44px;height:44px;border-radius:50%;background:rgba(20,19,15,.08);font-size:22px;line-height:1;transition:.25s}.x:hover{background:rgba(20,19,15,.16);transform:rotate(90deg)}
+.sheet.dkg .x{background:rgba(255,255,255,.12)}.sheet.dkg .x:hover{background:rgba(255,255,255,.22)}
+@media(max-width:820px){.ov{padding:0;align-items:end}.sheet{max-height:94vh;border-radius:var(--r) var(--r) 0 0}}
+
 /* booking */
-main{padding:90px 0 110px}
-.bk{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:start}@media(max-width:960px){.bk{grid-template-columns:1fr}}
-.wz{background:var(--white);border:1px solid var(--line)}
-.pb{display:flex}.pb i{flex:1;height:3px;background:var(--line);transition:background .4s}.pb i.on{background:var(--brass)}
-.wb{padding:40px 38px;min-height:390px}@media(max-width:560px){.wb{padding:28px 18px}}
-.wb h2{font-size:36px;margin-bottom:8px}.wb .n{color:var(--stone);font-size:14px;margin-bottom:26px}
-.stp{display:none}.stp.on{display:block;animation:in .45s ease}@keyframes in{from{opacity:0;transform:translateX(16px)}}
-.og{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media(max-width:560px){.og{grid-template-columns:1fr}}
-.op{border:1px solid var(--line);padding:18px;text-align:left;background:var(--parch);transition:border-color .2s,background .2s;min-height:48px}
-.op:hover{border-color:var(--brass)}.op.sel{border-color:var(--ink);background:var(--dim);box-shadow:inset 0 0 0 1px var(--ink)}
-.op b{display:block;font:500 21px 'Cormorant Garamond',serif}.op small{color:var(--stone);font-size:12.5px;display:block;line-height:1.4;margin-top:2px}
-.op em{display:block;margin-top:8px;font:500 12px 'JetBrains Mono',monospace;font-style:normal;color:var(--deep)}
-.days{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:14px}.days .op{flex:0 0 auto;text-align:center;padding:12px 16px}.days b{font-size:20px}
-.sl{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.sl .op{text-align:center;padding:14px 6px}.sl b{font-size:19px}
-.fd{margin-bottom:14px}.fd label{display:block;margin-bottom:6px;color:var(--deep)}.fd input,.fd textarea{width:100%;padding:13px;border:1px solid var(--line);background:var(--parch);color:var(--ink);font:inherit;font-size:15px}
-.fd input:focus,.fd textarea:focus{outline:2px solid var(--brass);outline-offset:1px}
-.sm{border:1px solid var(--line);padding:4px 16px;margin-bottom:20px;font-size:14px}.sm div{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--line)}.sm div:last-child{border:0}.sm span:first-child{color:var(--stone)}
-.wf{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px 38px;border-top:1px solid var(--line)}@media(max-width:560px){.wf{padding:16px 18px}}
-.fee{font-size:12px;color:var(--stone)}.fee b{display:block;font:500 30px 'Cormorant Garamond',serif;color:var(--deep);line-height:1.1}
-.back{color:var(--stone);font-size:13px;min-height:44px}
-.b{background:var(--ink);color:var(--parch);min-height:50px;padding:0 26px;font:500 12px 'JetBrains Mono',monospace;letter-spacing:.06em;text-transform:uppercase;transition:background .25s}
-.b:hover{background:var(--deep)}.b:disabled{background:var(--stone);opacity:.5;cursor:not-allowed}
-.done{text-align:center;padding:30px 0}.done h2{margin-bottom:10px}
-/* expect video */
-.vd{position:sticky;top:96px}
-.vf{aspect-ratio:16/10;background:var(--ink);border:1px solid var(--line);overflow:hidden}.vf video{width:100%;height:100%;object-fit:cover;display:block}
-.vd h3{font-size:30px;margin:22px 0 8px}.vd p{color:var(--soft);font-size:14.5px}
-.vd ul{list-style:none;margin-top:18px}.vd li{padding:11px 0;border-top:1px solid var(--line);font-size:14px;display:flex;gap:12px}.vd li span{color:var(--brass);font-family:'JetBrains Mono',monospace;font-size:12px;padding-top:2px}
-footer{background:var(--ink);color:var(--parch);padding:56px 0 28px}
-.fg{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;padding-bottom:34px;border-bottom:1px solid #3A382F}
-.fg a,.fg p{display:block;color:#D9D5C6;font-size:14px;margin-bottom:8px}.fg a:hover{color:var(--pale)}
-.fg .q{font:italic 500 28px/1.15 'Cormorant Garamond',serif;color:var(--pale);max-width:340px}
-.fb{padding-top:22px;font-size:12px;color:var(--stone);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.bsheet{max-width:1020px;display:grid;grid-template-columns:320px 1fr;height:min(720px,calc(100vh - 40px))}
+.bl{background:rgba(20,19,15,.82);color:#fff;padding:34px 30px;display:flex;flex-direction:column;justify-content:space-between}
+.bl h2{font-size:42px;margin-top:10px}.bl h2 i{color:var(--pale)}.bl p{color:#CFCABA;font-size:14px;margin-top:12px}
+.sum{margin-top:22px;border-top:1px solid rgba(255,255,255,.2)}.sum div{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.12);font-size:13px}
+.sum span:first-child{color:#B5B0A0}.sum .e{color:#7C786A}.sum b{font-weight:500;text-align:right}
+.sum .tot{border:0;padding-top:14px;align-items:baseline}.sum .tot span:last-child{font:500 28px 'Cormorant Garamond',serif;color:var(--pale)}
+.br{display:flex;flex-direction:column;min-height:0}
+.bar{height:3px;background:var(--line)}.bar i{display:block;height:100%;background:var(--acc);transition:width .5s cubic-bezier(.3,1,.4,1)}
+.sc{flex:1;overflow:auto;padding:38px 44px 20px}
+.stepno{color:var(--accd);display:block;margin-bottom:10px}
+.sc h2{font-size:clamp(32px,4vw,44px);margin-bottom:8px}.lead{color:var(--mute);margin-bottom:24px;font-size:15px}
+.stp{animation:in .4s cubic-bezier(.2,1,.3,1)}@keyframes in{from{opacity:0;transform:translateY(12px)}}
+.opt{display:flex;align-items:center;gap:16px;width:100%;text-align:left;padding:16px 20px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.55);margin-bottom:10px;min-height:66px;transition:border-color .25s,background .25s,transform .3s cubic-bezier(.3,1.4,.5,1)}
+.opt:hover{border-color:var(--acc);transform:translateY(-1px)}.opt.sel{border-color:var(--ink);background:rgba(255,255,255,.9)}
+.rd{flex:0 0 22px;height:22px;border-radius:50%;border:2px solid #A9A493;display:grid;place-items:center}.opt.sel .rd{border-color:var(--ink)}.opt.sel .rd:after{content:"";width:10px;height:10px;border-radius:50%;background:var(--ink)}
+.opt b{display:block;font-weight:600;font-size:16px}.opt small{color:var(--mute);font-size:13.5px;line-height:1.4;display:block}
+label.cap{display:block;margin-bottom:8px;color:var(--accd)}
+select,input,textarea{width:100%;padding:15px 16px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.7);color:var(--ink);font-size:16px}
+select:focus,input:focus,textarea:focus{outline:2px solid var(--acc);outline-offset:-1px}.fd{margin-bottom:16px}
+.price{background:rgba(20,19,15,.9);color:#fff;padding:24px;border-radius:22px;margin-top:22px;animation:in .5s}
+.price .r{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:14.5px}.price .r span:first-child{color:#C4BFAF}
+.price .t{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;font:500 40px 'Cormorant Garamond',serif;color:var(--pale)}.price .t span{font:600 11px Inter;letter-spacing:.14em;color:#C4BFAF}
+.price small{display:block;color:#C4BFAF;font-size:12.5px;margin-top:10px}
+.ch{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.ch b{font:500 26px 'Cormorant Garamond',serif}
+.ch button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.6);font-size:18px}.ch button:disabled{opacity:.3;cursor:not-allowed}
+.cg{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;justify-items:center}.wd{font:600 10px Inter;letter-spacing:.1em;color:var(--mute);text-transform:uppercase;padding:4px 0}
+.dy{width:100%;max-width:48px;aspect-ratio:1;border-radius:50%;border:1.5px solid transparent;font-size:14px;font-weight:500;transition:.2s}
+.dy.fr{background:rgba(255,255,255,.7)}.dy.fr:hover{border-color:var(--acc)}.dy.sel{background:var(--ink);color:#fff}
+.dy.bk{background:var(--red);color:#fff;cursor:not-allowed}.dy.off{color:var(--red);border-color:var(--red);opacity:.35;cursor:not-allowed}
+.lg{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--mute);margin-top:14px}.lg i{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:-2px;margin-right:6px}
+.tm{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}.tm .opt{justify-content:center;margin:0;padding:12px 6px;min-height:54px;border-radius:999px}.tm .opt b{font-size:15px}
+.hint{color:var(--mute);font-size:13.5px;margin-top:16px}.hp{position:absolute;left:-9999px}.err{color:var(--red);font-size:14px;margin-top:10px;display:none}
+.okc{width:60px;height:60px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;font-size:28px;margin-bottom:20px}
+.bank{background:rgba(255,255,255,.6);border-radius:18px;padding:4px 20px;margin:20px 0}.bank div{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:13px 0;font-size:15px;border-bottom:1px solid var(--line)}.bank div:last-child{border:0}.bank span:first-child{color:var(--mute)}
+.cp{border:1px solid var(--ink);border-radius:999px;padding:0 14px;min-height:32px;font:600 10px Inter;letter-spacing:.1em;text-transform:uppercase;margin-left:10px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 44px;border-top:1px solid var(--line)}
+.fee{font-size:11px;color:var(--mute);text-transform:uppercase;letter-spacing:.1em}.fee b{display:block;font:500 26px 'Cormorant Garamond',serif;color:var(--accd);letter-spacing:0;text-transform:none;line-height:1.1}
+.back{color:var(--mute);font-size:14px;min-height:44px;padding-right:8px}
+@media(max-width:820px){.bsheet{grid-template-columns:1fr;height:94vh}.bl{display:none}.sc{padding:30px 20px 16px}.foot{padding:14px 20px}.sc h2{padding-right:40px}}
+
+/* expect + faq */
+.xsheet{max-width:980px;display:grid;grid-template-columns:1.1fr .9fr;overflow:auto}
+.xv{position:relative;min-height:340px;background:var(--ink)}.xv video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.snd{position:absolute;left:14px;bottom:14px;padding:0 18px;min-height:44px;border-radius:999px;background:rgba(20,19,15,.6);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);font:600 11px Inter;letter-spacing:.08em;text-transform:uppercase;color:#fff}
+.xt{padding:44px 38px}.xt h2{font-size:clamp(34px,4vw,48px);margin:10px 0 12px}.xt p{color:var(--mute);font-size:15px}
+.exl{list-style:none;margin:22px 0 26px}.exl li{display:flex;gap:16px;padding:13px 0;border-top:1px solid var(--line);color:var(--mute);font-size:14.5px}.exl li span{color:var(--accd);font:600 12px Inter;padding-top:4px}.exl b{display:block;color:var(--ink);font:500 21px 'Cormorant Garamond',serif}
+@media(max-width:820px){.xsheet{grid-template-columns:1fr;height:94vh}.xv{min-height:230px}.xt{padding:28px 20px}}
+.fsheet{max-width:720px;padding:44px 38px;overflow:auto}.fsheet h2{font-size:clamp(34px,4vw,46px);margin:8px 0 18px}
+details{border-top:1px solid var(--line);padding:16px 0}details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font:500 22px 'Cormorant Garamond',serif;list-style:none;display:flex;justify-content:space-between;gap:16px;min-height:32px}summary::-webkit-details-marker{display:none}
+summary:after{content:"+";color:var(--accd);font-size:26px;line-height:1}details[open] summary:after{content:"−"}details p{color:var(--mute);margin-top:8px;font-size:15px}
+@media(max-width:820px){.fsheet{padding:30px 20px;max-height:94vh}}
+
+.tl{display:flex;gap:4px 18px;flex-wrap:wrap;justify-content:center;padding:9px 44px;background:rgba(20,19,15,.05);border-bottom:1px solid var(--line);font-size:12px;color:var(--mute)}.tl span:before{content:"✓ ";color:var(--ok);font-weight:700}
+.fh{display:none;color:var(--red);font-size:12.5px;margin-top:6px}.bad{border-color:var(--red)}.bad+.fh{display:block}
+.nxl{list-style:none;margin:20px 0 4px;border-top:1px solid var(--line)}.nxl li{display:flex;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--mute)}.nxl li b{color:var(--accd);font:600 12px Inter;padding-top:3px}
+@media(max-width:620px){.tl{padding:8px 18px;font-size:11.5px;justify-content:flex-start}}
+/* ===== PHONE POLISH ===== */
+@media(max-width:820px){
+ .ov{-webkit-backdrop-filter:none}.ov.in{-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+ .glass{-webkit-backdrop-filter:blur(18px) saturate(125%);backdrop-filter:blur(18px) saturate(125%)}
+ .blob{filter:blur(50px);opacity:.28}
+ .bsheet,.xsheet{height:94vh;height:94dvh}.sheet{max-height:94vh;max-height:94dvh}
+ .foot{padding-bottom:calc(14px + env(safe-area-inset-bottom))}
+ .xsheet{display:block;overflow:auto}.xv{min-height:0;aspect-ratio:16/10}.xt{padding:26px 20px calc(26px + env(safe-area-inset-bottom))}
+ .fsheet{padding:30px 20px calc(30px + env(safe-area-inset-bottom))}
+}
+@media(max-width:620px){
+ nav{top:max(12px,env(safe-area-inset-top));padding:6px 6px 6px 16px}.brand i{display:none}.brand{font-size:15px;letter-spacing:.1em}
+ .nl .btn{min-height:42px;padding:0 18px}
+ .main{padding:96px 18px calc(24px + env(safe-area-inset-bottom))}
+ h1{font-size:clamp(50px,15vw,72px);line-height:.98}.sub{font-size:15.5px;margin-top:16px}
+ .cta{flex-direction:column;gap:10px;margin-top:26px}.cta .btn{width:100%}
+ .chips{gap:10px;margin-top:26px}.chip{flex:1 1 calc(50% - 5px);min-width:0;padding:12px 16px;border-radius:18px}.chip:last-child{flex-basis:100%}.chip b{font-size:22px}
+ .contact{gap:8px 16px;margin-top:20px;font-size:12.5px}
+ .sc{padding:26px 18px 14px}.sc h2{font-size:32px;padding-right:46px}.lead{margin-bottom:18px}
+ .opt{padding:14px 16px;gap:14px;min-height:62px;border-radius:16px}.opt b{font-size:15.5px}.opt small{font-size:13px}
+ .price{padding:20px;border-radius:20px}.price .r{font-size:13.5px;gap:10px}.price .t{font-size:34px}
+ .cg{gap:4px}.dy{font-size:13.5px}.tm{gap:8px}
+ .foot{gap:8px}.back{font-size:13px;padding-right:0}.fee b{font-size:22px}.foot .btn{min-height:50px;padding:0 22px;font-size:13.5px}
+ .x{top:10px;right:10px;width:40px;height:40px;background:rgba(20,19,15,.1)}
+ .bank div{font-size:14px;flex-wrap:wrap}.cp{margin-left:8px}
+}
+@media(max-width:360px){h1{font-size:46px}.foot .fee{display:none}.foot{justify-content:space-between}}
+@media(max-height:560px) and (min-width:621px){.main{padding-top:96px}h1{font-size:64px}.chips{display:none}}
 </style>
 </head>
 <body>
-<header id="hd"><a href="#top" class="brand">THE RENAISSANCE <i>Agency</i></a><a class="wa mono" href="https://wa.me/2347041365302" target="_blank" rel="noopener">WhatsApp us</a></header>
+<div class="hero">
+  <video id="hv" autoplay muted loop playsinline preload="auto" poster="images/hero-poster.jpg"><source src="construction-drone.mp4" type="video/mp4"><source src="construction-drone.webm" type="video/webm"></video>
+  <div class="blob b1"></div><div class="blob b2"></div>
+</div>
 
-<section class="hero" id="top">
-  <!-- Drone clip: videos/construction-drone.mp4 (6–15s, 720p, audio removed) + images/hero-poster.jpg -->
-  <video id="hv" autoplay muted loop playsinline preload="metadata"><source src="construction-drone.mp4" type="video/mp4"></video>
-  <div class="w">
-    <h1>Book a <i>consultation.</i></h1>
-    <p>Tell us about your project in four quick steps. We’ll confirm your slot on WhatsApp.</p>
-    <div class="facts">
-      <div><b>From ₦50,000</b><span class="mono">Fee scales with project size</span></div>
-      <div><b>Deducted</b><span class="mono">From your project if you proceed</span></div>
-      <div><b>24 hours</b><span class="mono">Response after booking</span></div>
-    </div>
-  </div>
-</section>
+<nav class="glass pill"><a href="#" class="brand">THE RENAISSANCE <i>Agency</i></a>
+  <div class="nl"><button class="l" data-open="p-expect" type="button">What to expect</button><button class="l" data-open="p-faq" type="button">FAQ</button><button class="btn" data-open="p-book" type="button">Book now</button></div></nav>
 
-<main><div class="w"><div class="bk">
-  <div class="wz">
-    <div class="pb" id="pb"><i></i><i></i><i></i><i></i></div>
-    <div class="wb" id="wb">
-      <div class="stp" data-s="0"><h2>What are we working on?</h2><p class="n">Choose the discipline that fits.</p><div class="og" id="o0"></div></div>
-      <div class="stp" data-s="1"><h2>How big is the project?</h2><p class="n">This sets your consultation fee.</p><div class="og" id="o1"></div></div>
-      <div class="stp" data-s="2"><h2>Pick a time</h2><p class="n">Choose a day, then a time. We confirm the exact slot on WhatsApp.</p><div class="days" id="od"></div><div class="sl" id="ot"></div></div>
-      <div class="stp" data-s="3"><h2>Confirm your details</h2><p class="n">Check your booking, then send it.</p>
-        <div class="sm" id="sm"></div>
-        <div class="fd"><label class="mono" for="nm">Full name</label><input id="nm" autocomplete="name"></div>
-        <div class="fd"><label class="mono" for="ph">Phone / WhatsApp</label><input id="ph" type="tel" autocomplete="tel"></div>
-        <div class="fd"><label class="mono" for="nt">Project notes (optional)</label><textarea id="nt" rows="3" placeholder="Location, timeline, anything we should know"></textarea></div>
-      </div>
-      <div class="stp done" data-s="4"><h2>Almost done.</h2><p class="n">Your booking opened in WhatsApp. Press send there to lock it in. If it didn’t open, message us on +234 070 4136 5302.</p></div>
-    </div>
-    <div class="wf" id="wf"><button class="back" id="bkb" type="button">← Back</button><div class="fee">Estimated fee<b id="fee">₦50,000+</b></div><button class="b" id="nx" type="button" disabled>Continue</button></div>
-  </div>
+<div class="main">
+  <span class="cap" style="color:var(--pale)">Lugbe · Abuja · Nigeria</span>
+  <h1 class="serif" style="margin-top:14px">Build it <i>beautifully.</i></h1>
+  <p class="sub">Estimate and design consultations for construction, interiors and exteriors. Book in under two minutes.</p>
+  <div class="cta"><button class="btn" data-open="p-book" type="button">Book a consultation →</button><button class="btn g" data-open="p-expect" type="button">▶ What to expect</button></div>
+  <div class="chips"><div class="chip glass"><b>2 minutes</b><span>To book online</span></div><div class="chip glass"><b>Fee credited</b><span>If you proceed</span></div><div class="chip glass"><b>24 hours</b><span>Confirmation</span></div></div>
+  <div class="contact"><a href="tel:+2347041365302">+234 704 136 5302</a><a href="mailto:therenaissanceagencylimited@gmail.com">therenaissanceagencylimited@gmail.com</a><a href="https://wa.me/2347041365302" target="_blank" rel="noopener">WhatsApp</a><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/1MKXdVPAzq/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/in/the-agency-7102a3362" target="_blank" rel="noopener">LinkedIn</a></div>
+</div>
 
-  <aside class="vd">
-    <!-- Meeting clip: videos/what-to-expect.mp4 + images/expect-poster.jpg -->
-    <div class="vf"><video controls preload="none" playsinline poster="images/expect-poster.jpg"><source src="what-to-expect.mp4" type="video/mp4"></video></div>
-    <h3>What to expect</h3>
-    <p>A focused conversation about your space, your goals and your budget.</p>
-    <ul>
-      <li><span>1</span>We review your site, scale and goals together.</li>
-      <li><span>2</span>We scope the project and outline next steps.</li>
-      <li><span>3</span>Your fee is deducted from the project if you go ahead.</li>
-    </ul>
-  </aside>
-</div></div></main>
+<!-- HIDDEN: booking -->
+<div class="ov" id="p-book" role="dialog" aria-modal="true" aria-label="Book a consultation" hidden>
+ <div class="sheet lite bsheet">
+  <button class="x" data-close type="button" aria-label="Close">×</button>
+  <aside class="bl"><div><span class="cap" style="color:var(--pale)">The Renaissance Agency</span><h2 class="serif">Book a <i>consultation.</i></h2><p>Your price appears after you choose a location. Pay directly to our company account.</p><div class="sum" id="sm"></div></div>
+   <p style="font-size:12px;color:#8C887A">Mon–Sat · Sundays closed</p></aside>
+  <div class="br"><div class="bar"><i id="pg"></i></div><div class="tl"><span>Pay to our registered company account</span><span>Reply within 24 hours</span><span>Mon–Sat, Sundays closed</span></div><div class="sc" id="wb" aria-live="polite"></div>
+   <div class="foot" id="wf"><button class="back" id="bkb" type="button">← Back</button><div class="fee">Total<b id="fee">After location</b></div><button class="btn dk" id="nx" type="button" disabled>Continue</button></div></div>
+ </div>
+</div>
 
-<footer><div class="w">
-  <div class="fg">
-    <p class="q">“Creativity is the reason for our existence.”</p>
-    <div><a href="tel:+2347041365302">+234 070 4136 5302</a><a href="https://wa.me/2347041365302" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:therenaissanceagencylimited@gmail.com">therenaissanceagencylimited@gmail.com</a><p>Abuja, Nigeria</p></div>
-    <div><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/share/1MKXdVPAzq/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/in/the-agency-7102a3362" target="_blank" rel="noopener">LinkedIn</a><a href="https://pin.it/5C9rncmtP" target="_blank" rel="noopener">Pinterest</a></div>
-  </div>
-  <div class="fb"><span>© 2026 The Renaissance Agency Limited. All rights reserved.</span><span>Excellence. Precision. Experience.</span></div>
-</div></footer>
+<!-- HIDDEN: what to expect -->
+<div class="ov" id="p-expect" role="dialog" aria-modal="true" aria-label="What to expect" hidden>
+ <div class="sheet lite xsheet"><button class="x" data-close type="button" aria-label="Close">×</button>
+  <div class="xv"><video id="exv" muted loop playsinline preload="none" poster="images/expect-poster.jpg"><source src="what-to-expect.mp4" type="video/mp4"><source src="videos/what-to-expect.mp4" type="video/mp4"><source src="what-to-expect.webm" type="video/webm"></video><button class="snd" id="snd" type="button">Sound off</button></div>
+  <div class="xt"><span class="cap" style="color:var(--accd)">What to expect</span><h2 class="serif">A focused conversation about your space.</h2><p>No pressure, just clarity on your site, goals and budget.</p>
+   <ul class="exl"><li><span>01</span><div><b>We review your site</b>Scale, access and what you want to achieve.</div></li><li><span>02</span><div><b>We scope the project</b>Clear costs, timelines and next steps.</div></li><li><span>03</span><div><b>Your fee is credited</b>Deducted from the project if you go ahead.</div></li></ul>
+   <button class="btn dk" data-open="p-book" type="button">Book your slot →</button></div></div>
+</div>
 
+<!-- HIDDEN: faq -->
+<div class="ov" id="p-faq" role="dialog" aria-modal="true" aria-label="Good to know" hidden>
+ <div class="sheet lite fsheet"><button class="x" data-close type="button" aria-label="Close">×</button>
+  <span class="cap" style="color:var(--accd)">FAQ</span><h2 class="serif">Good to know</h2>
+  <details><summary>Which consultation do I need?</summary><p>Choose the estimate consultation if you already have an idea and want a clear cost. Choose the design and estimate consultation if you need us to create the best and most efficient design for you, with your estimate included.</p></details>
+  <details><summary>Do you travel outside Abuja?</summary><p>Yes. We travel to your site from Lugbe, Abuja. For sites outside Abuja, a travel cost for the trip is added to your price.</p></details>
+  <details><summary>Is the fee deducted from my project?</summary><p>Yes. If you go ahead with us, your consultation fee is deducted from the project cost.</p></details>
+  <details><summary>Which days can I book?</summary><p>Monday to Saturday. Sundays are closed, and days already taken are marked in red.</p></details>
+ </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script>
-const $=(q,e=document)=>e.querySelector(q),$$=(q,e=document)=>[...e.querySelectorAll(q)];
-if(matchMedia('(prefers-reduced-motion:reduce)').matches)$('#hv').pause();
-addEventListener('scroll',()=>$('#hd').classList.toggle('s',scrollY>innerHeight*.5),{passive:true});
-const TY=[['Construction','New builds and renovations'],['Interior Design','Spaces designed inside'],['Exterior Design','Façades, gardens and grounds'],['Full property','Build plus design, start to finish']];
-const SC=[['Single room','One space or room',50000],['Apartment or home','Full interior or exterior',100000],['Large home or commercial','Multi-floor or commercial',175000],['Estate or multi-site','Estates and developments',250000]];
-const TM=['10:00 AM','1:00 PM','4:00 PM'],ng=n=>'₦'+n.toLocaleString('en-NG');
-const S={t:null,s:null,d:null,m:null};let n=0;
-const card=(a,i,fee)=>`<button type="button" class="op" data-i="${i}"><b>${a[0]}</b><small>${a[1]}</small>${fee?`<em>${ng(a[2])}</em>`:''}</button>`;
-$('#o0').innerHTML=TY.map((a,i)=>card(a,i)).join('');$('#o1').innerHTML=SC.map((a,i)=>card(a,i,1)).join('');
-const days=[];for(let k=1;days.length<7;k++){const d=new Date(Date.now()+864e5*k);if(d.getDay())days.push(d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'}))}
-$('#od').innerHTML=days.map((d,i)=>`<button type="button" class="op" data-i="${i}"><b>${d}</b></button>`).join('');
-$('#ot').innerHTML=TM.map((t,i)=>`<button type="button" class="op" data-i="${i}"><b>${t}</b></button>`).join('');
-[['o0','t'],['o1','s'],['od','d'],['ot','m']].forEach(([id,k])=>$('#'+id).addEventListener('click',e=>{const b=e.target.closest('.op');if(!b)return;$$('.op',$('#'+id)).forEach(x=>x.classList.remove('sel'));b.classList.add('sel');S[k]=+b.dataset.i;if(k==='s')$('#fee').textContent=ng(SC[S.s][2]);render()}));
-const ok=()=>n===0?S.t!==null:n===1?S.s!==null:n===2?S.d!==null&&S.m!==null:$('#nm').value.trim()&&$('#ph').value.trim().length>6;
-function render(){$$('.stp').forEach(s=>s.classList.toggle('on',+s.dataset.s===n));$$('#pb i').forEach((i,k)=>i.classList.toggle('on',k<=Math.min(n,3)));
- $('#wf').style.display=n===4?'none':'flex';$('#bkb').style.visibility=n?'visible':'hidden';$('#nx').textContent=n===3?'Send on WhatsApp':'Continue';$('#nx').disabled=!ok();
- if(n===3)$('#sm').innerHTML=[['Project',TY[S.t][0]],['Scale',SC[S.s][0]],['Preferred time',days[S.d]+', '+TM[S.m]],['Consultation fee',ng(SC[S.s][2])]].map(r=>`<div><span>${r[0]}</span><span>${r[1]}</span></div>`).join('')}
-['nm','ph'].forEach(i=>$('#'+i).addEventListener('input',render));
-$('#bkb').onclick=()=>{n--;render()};
-$('#nx').onclick=()=>{if(n<3){n++;render();$('#wb').scrollIntoView({block:'nearest'});return}
- const m=`Hello Renaissance Agency, I’d like to book a consultation.\nName: ${$('#nm').value}\nPhone: ${$('#ph').value}\nProject: ${TY[S.t][0]}\nScale: ${SC[S.s][0]}\nPreferred time: ${days[S.d]}, ${TM[S.m]}\nEstimated fee: ${ng(SC[S.s][2])}\nNotes: ${$('#nt').value||'None'}`;
- open('https://wa.me/2347041365302?text='+encodeURIComponent(m),'_blank');n=4;render()};
-render();
+const CONFIG={WHATSAPP:'2347041365302',WEB3FORMS_KEY:'a088fa41-f4f8-4685-9274-7fa9864ab43a',
+ BANK:{name:'THE RENAISSANCE AGENCY LTD',bank:'Zenith Bank',number:'1311798853'},
+ FUEL_PRICE_PER_LITRE:1000,KM_PER_LITRE:10,RETURN_TRIP:true,MIN_TRANSPORT:3000,ROUND_TO:500,DESIGN_BASE:100000,SMALL_ESTIMATE:60000,SMALL_DESIGN_EXTRA:30000,HOME:'FCT (Abuja)',
+ BOOKED_DATES:['2026-10-27','2026-11-04']};
+/* Road distances (km, ONE WAY) from River Park, Lugbe, Abuja. These are estimates: edit freely.
+   First area in each state is its capital. "Other area in <state>" is added automatically at the capital's distance. */
+const LOC={
+'FCT (Abuja)':[['River Park / Lugbe',0],['Lokogoma',10],['Sunnyvale',12],['Apo',15],['Galadimawa',17],['Games Village',20],['Garki',20],['Wuye',22],['Asokoro',22],['Central Business District',22],['Wuse',24],['Maitama',26],['Utako',27],['Jabi',28],['Life Camp',28],['Katampe',28],['Jahi',28],['Kado',28],['Karu',30],['Nyanya',30],['Mpape',32],['Gwarinpa',33],['Gwagwalada',35],['Dutse',38],['Kubwa',40],['Kuje',40],['Zuba',50],['Bwari',55],['Abaji',100],['Other FCT area',35]],
+'Abia':[['Umuahia',520],['Aba',580]],'Adamawa':[['Yola',830],['Mubi',940]],'Akwa Ibom':[['Uyo',700],['Eket',750]],
+'Anambra':[['Awka',440],['Onitsha',450],['Nnewi',470]],'Bauchi':[['Bauchi',620]],'Bayelsa':[['Yenagoa',650]],
+'Benue':[['Makurdi',300],['Gboko',340],['Otukpo',380]],'Borno':[['Maiduguri',1090]],'Cross River':[['Calabar',800]],
+'Delta':[['Asaba',470],['Warri',560],['Sapele',520]],'Ebonyi':[['Abakaliki',390]],'Edo':[['Benin City',480],['Auchi',380]],
+'Ekiti':[['Ado-Ekiti',440]],'Enugu':[['Enugu',380],['Nsukka',400]],'Gombe':[['Gombe',720]],'Imo':[['Owerri',570]],
+'Jigawa':[['Dutse',480]],'Kaduna':[['Kaduna',200],['Zaria',270]],'Kano':[['Kano',360]],'Katsina':[['Katsina',500]],
+'Kebbi':[['Birnin Kebbi',790]],'Kogi':[['Lokoja',190],['Okene',270],['Kabba',280]],'Kwara':[['Ilorin',480]],
+'Lagos':[['Ikeja',760],['Victoria Island',790],['Lekki',800],['Ikorodu',790]],
+'Nasarawa':[['Lafia',160],['Keffi',60],['Akwanga',130]],'Niger':[['Minna',160],['Suleja',45],['Bida',280]],
+'Ogun':[['Abeokuta',700],['Sagamu',740]],'Ondo':[['Akure',520]],'Osun':[['Osogbo',510]],'Oyo':[['Ibadan',600],['Ogbomosho',520]],
+'Plateau':[['Jos',300]],'Rivers':[['Port Harcourt',620]],'Sokoto':[['Sokoto',720]],'Taraba':[['Jalingo',790]],
+'Yobe':[['Damaturu',950]],'Zamfara':[['Gusau',480]]};
+Object.keys(LOC).forEach(k=>{if(k!=='FCT (Abuja)')LOC[k].push(['Other area in '+k,LOC[k][0][1]])});
+const STATES=Object.keys(LOC);
+const locTxt=()=>S.area?`${S.area}, ${S.state}`:'';
+const SERVICES=[['Estimate consultation','You already have an idea. We scope it and give you a clear estimate.'],['Design & estimate consultation','You need us to create the best, most efficient design for you, with your estimate included.']];
+const PROJECTS=[['Construction','New builds and renovations'],['Interior design','Spaces designed inside'],['Exterior design','Façades, gardens and grounds'],['Full property','Build plus design, start to finish']];
+const SCALES=[['Single room','One space or room',60000],['Apartment or home','Full interior or exterior',100000],['Large home or commercial','Multi-floor or commercial',175000],['Estate or multi-site','Estates and developments',250000]];
+const TIMES=['10:00 AM','1:00 PM','4:00 PM'],NAMES=['Service','Project','Size','Location','Date','Details'];
+const $=q=>document.querySelector(q),fmt=n=>'₦'+Math.round(n).toLocaleString('en-NG');
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const iso=(y,m,d)=>`${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+const today=new Date();today.setHours(0,0,0,0);
+const S={step:0,svc:null,proj:null,scale:null,state:null,area:null,date:null,time:null,name:'',phone:'',email:'',notes:'',month:today.getMonth(),year:today.getFullYear(),ref:'',sending:false,slip:false};
+
+/* panels */
+let openId=null,lastBtn=null;
+function openP(id,btn){if(openId)closeP(true);const el=document.getElementById(id);lastBtn=btn||document.activeElement;el.hidden=false;openId=id;document.body.classList.add('lock');
+ requestAnimationFrame(()=>requestAnimationFrame(()=>el.classList.add('in')));
+ el.querySelector('[data-close]').focus({preventScroll:true});
+ if(id==='p-expect'){const v=$('#exv');v.preload='auto';v.play().catch(()=>{})}}
+function closeP(quick){if(!openId)return;const el=document.getElementById(openId);const id=openId;openId=null;el.classList.remove('in');document.body.classList.remove('lock');
+ if(id==='p-expect')$('#exv').pause();
+ setTimeout(()=>{el.hidden=true},quick?0:450);if(!quick&&lastBtn&&lastBtn.focus)lastBtn.focus()}
+document.addEventListener('click',e=>{const o=e.target.closest('[data-open]');if(o){openP(o.dataset.open,o);return}
+ if(e.target.closest('[data-close]')||e.target.classList.contains('ov'))closeP()});
+addEventListener('keydown',e=>{if(e.key==='Escape')closeP()});
+
+function priceFor(){const est=SCALES[S.scale][2],small=[1,2].includes(S.proj)&&[0,1].includes(S.scale),base=small?CONFIG.SMALL_ESTIMATE:est,consult=S.svc===0?base:(small?base+CONFIG.SMALL_DESIGN_EXTRA:base+CONFIG.DESIGN_BASE);
+ const km=((LOC[S.state]||[]).find(a=>a[0]===S.area)||[0,0])[1],trips=CONFIG.RETURN_TRIP?2:1;
+ const tr=Math.max(CONFIG.MIN_TRANSPORT,Math.ceil(km*trips*(CONFIG.FUEL_PRICE_PER_LITRE/CONFIG.KM_PER_LITRE)/CONFIG.ROUND_TO)*CONFIG.ROUND_TO);
+ return{consult,transport:tr,total:consult+tr,km,trips,outside:S.state!==CONFIG.HOME}}
+const dateTxt=()=>new Date(S.date+'T00:00').toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
+const opt=(t,d,act,i,sel)=>`<button type="button" class="opt${sel?' sel':''}" data-act="${act}" data-i="${i}"><span class="rd"></span><span><b>${t}</b><small>${d}</small></span></button>`;
+function cal(){const f=new Date(S.year,S.month,1),n=new Date(S.year,S.month+1,0).getDate();let c='';
+ for(let i=0;i<f.getDay();i++)c+='<span></span>';
+ for(let d=1;d<=n;d++){const dt=new Date(S.year,S.month,d),k=iso(S.year,S.month,d);let cl='dy',dis='';
+  if(CONFIG.BOOKED_DATES.includes(k)){cl+=' bk';dis='disabled'}else if(dt.getDay()===0||dt<=today){cl+=' off';dis='disabled'}else cl+=' fr';
+  if(S.date===k)cl+=' sel';c+=`<button type="button" class="${cl}" data-act="day" data-d="${k}" ${dis} aria-label="${k}">${d}</button>`}
+ const cur=S.year===today.getFullYear()&&S.month===today.getMonth();
+ return`<div class="ch"><button type="button" data-act="mp" aria-label="Previous month" ${cur?'disabled':''}>‹</button><b>${f.toLocaleDateString('en-GB',{month:'long',year:'numeric'})}</b><button type="button" data-act="mn" aria-label="Next month">›</button></div>
+ <div class="cg">${['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map(w=>`<span class="wd">${w}</span>`).join('')}${c}</div>
+ <div class="lg"><span><i style="background:var(--red)"></i>Booked</span><span><i style="border:1.5px solid var(--red)"></i>Unavailable (Sundays, past)</span><span><i style="background:#fff;border:1px solid var(--line)"></i>Available</span></div>`}
+const T=[['What do you need?','Choose the consultation that fits you.'],['What kind of project?','Pick the closest match.'],['How big is it?','This helps us prepare for the visit.'],['Where is the site?','Choose your state, then your area. Your price appears right after.'],['Pick a day','Choose a date, then a time. We confirm on WhatsApp.'],['Your details','Last step. We only use this to confirm your booking.']];
+const steps=[
+()=>SERVICES.map((s,i)=>opt(s[0],s[1],'svc',i,S.svc===i)).join(''),
+()=>PROJECTS.map((s,i)=>opt(s[0],s[1],'proj',i,S.proj===i)).join(''),
+()=>SCALES.map((s,i)=>opt(s[0],s[1],'scale',i,S.scale===i)).join(''),
+()=>{let p='';if(S.area){const x=priceFor();p=`<div class="price"><span class="cap" style="color:var(--pale)">Your price</span>
+ <div class="r"><span>${SERVICES[S.svc][0]}</span><span>${x.outside?fmt(x.consult):SCALES[S.scale][0]}</span></div>
+ ${x.outside?`<div class="r"><span>Travel, go and return (${x.km} km each way)</span><span>${fmt(x.transport)}</span></div>`:''}
+ <div class="t"><span>TOTAL</span>${fmt(x.total)}</div><small>${x.outside?'':'Includes travel to your site. '}Your fee is deducted from the project if you proceed.</small></div>`}
+ return`<div class="fd"><label class="cap" for="state">State</label><select id="state"><option value="">Select a state</option>${STATES.map(a=>`<option ${S.state===a?'selected':''}>${a}</option>`).join('')}</select></div>
+ ${S.state?`<div class="fd"><label class="cap" for="area">Area / town</label><select id="area"><option value="">Select an area</option>${LOC[S.state].map(a=>`<option ${S.area===a[0]?'selected':''}>${a[0]}</option>`).join('')}</select></div>`:''}${p}`},
+()=>cal()+(S.date?`<div class="tm">${TIMES.map(t=>`<button type="button" class="opt${S.time===t?' sel':''}" data-act="time" data-t="${t}"><b>${t}</b></button>`).join('')}</div>`:'<p class="hint">Select a date to see available times.</p>'),
+()=>`<div class="fd"><label class="cap" for="nm">Full name</label><input id="nm" autocomplete="name" value="${esc(S.name)}"><small class="fh">Please enter your full name.</small></div>
+ <div class="fd"><label class="cap" for="ph">Phone / WhatsApp</label><input id="ph" type="tel" inputmode="tel" autocomplete="tel" value="${esc(S.phone)}"><small class="fh">Enter a valid phone number, e.g. 0704 136 5302.</small></div>
+ <div class="fd"><label class="cap" for="em">Email (optional)</label><input id="em" type="email" autocomplete="email" value="${esc(S.email)}"></div>
+ <div class="fd"><label class="cap" for="nt">Project notes (optional)</label><textarea id="nt" rows="3" placeholder="Site address, timeline, anything we should know">${esc(S.notes)}</textarea></div>
+ <input class="hp" id="bot" tabindex="-1" autocomplete="off"><p class="err" id="err">We couldn’t send your booking. Please try again or WhatsApp us.</p>`];
+const done=()=>{const x=priceFor(),head=`<div class="okc">✓</div><h2 class="serif">Booking received.</h2>`;
+ if(!S.slip)return`<div class="stp">${head}<p class="lead">Reference: <b>${S.ref}</b></p>
+ <div class="bank" style="padding:18px 20px"><b>Step 1 of 2 · Send your booking slip</b><p class="hint" style="margin-top:6px">We’ll create a PDF slip with your booking details and the amount to pay. Send it to us on WhatsApp, then your payment details appear.</p></div>
+ <button class="btn dk" style="width:100%" data-act="slip" type="button">Create PDF &amp; send on WhatsApp</button></div>`;
+ const m=`Hello Renaissance Agency, I have paid for my consultation.\nReference: ${S.ref}\nName: ${S.name}\nService: ${SERVICES[S.svc][0]}\nAmount paid: ${fmt(x.total)}\nMy receipt is attached.`;
+ return`<div class="stp">${head}<p class="lead">Step 2 of 2 · Pay the amount below, then send your receipt on WhatsApp to lock in your slot. Reference: <b>${S.ref}</b></p>
+ <div class="bank"><div><span>Account name</span><span>${CONFIG.BANK.name}</span></div><div><span>Bank</span><span>${CONFIG.BANK.bank}</span></div>
+ <div><span>Account number</span><span><b>${CONFIG.BANK.number}</b><button class="cp" type="button" data-act="copy">Copy</button></span></div><div><span>Amount to pay</span><span><b>${fmt(x.total)}</b></span></div></div>
+ <a class="btn dk" style="width:100%" href="https://wa.me/${CONFIG.WHATSAPP}?text=${encodeURIComponent(m)}" target="_blank" rel="noopener">Send payment receipt on WhatsApp</a>
+ <p class="hint">Attach your payment screenshot in the WhatsApp chat before sending.</p>
+ <ul class="nxl"><li><b>01</b>Make your transfer to the account above.</li><li><b>02</b>Send your receipt to us on WhatsApp.</li><li><b>03</b>We confirm your slot within 24 hours. To change your date, WhatsApp us.</li></ul><button class="back" type="button" data-act="slip2" style="margin-top:10px">Download booking slip again</button></div>`};
+function makePDF(){const J=window.jspdf&&window.jspdf.jsPDF;if(!J)return null;const d=new J({unit:'mm',format:'a4'}),x=priceFor(),N=n=>'NGN '+Math.round(n).toLocaleString('en-NG');
+ d.setFillColor(20,19,15);d.rect(0,0,210,52,'F');d.setFillColor(176,141,87);d.rect(0,52,210,1.6,'F');
+ d.setTextColor(255,255,255);d.setFont('times','normal');d.setFontSize(22);d.text('THE RENAISSANCE AGENCY',18,24);
+ d.setFont('helvetica','normal');d.setFontSize(8);d.setTextColor(230,210,168);d.text('BOOKING SLIP  &  PAYMENT DETAILS',18,32);
+ d.setTextColor(200,196,184);d.text('REFERENCE',150,22);d.setFont('helvetica','bold');d.setFontSize(12);d.setTextColor(255,255,255);d.text(S.ref,150,29);
+ d.setFont('helvetica','normal');d.setFontSize(8);d.setTextColor(200,196,184);d.text(new Date().toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}),150,36);
+ let y=70;
+ const lab=t=>{d.setFont('helvetica','bold');d.setFontSize(8);d.setTextColor(126,95,51);d.text(t,18,y);y+=7};
+ const row=(k,v)=>{d.setFont('helvetica','normal');d.setFontSize(10);d.setTextColor(107,103,92);d.text(k,18,y);d.setTextColor(20,19,15);d.setFont('helvetica','bold');d.text(String(v),192,y,{align:'right'});d.setDrawColor(227,224,216);d.line(18,y+3,192,y+3);y+=10};
+ lab('CLIENT');row('Name',S.name);row('Phone',S.phone);if(S.email)row('Email',S.email);y+=6;
+ lab('BOOKING');row('Service',SERVICES[S.svc][0]);row('Project',PROJECTS[S.proj][0]);row('Size',SCALES[S.scale][0]);row('Location',locTxt());row('Appointment',dateTxt()+', '+S.time);y+=6;
+ lab('AMOUNT TO PAY');if(x.outside){row(SERVICES[S.svc][0],N(x.consult));row('Travel, go and return ('+x.km+' km each way)',N(x.transport))}else row(SERVICES[S.svc][0]+' (includes travel)',N(x.total));
+ y+=4;d.setFillColor(20,19,15);d.roundedRect(18,y,174,26,3,3,'F');d.setTextColor(230,210,168);d.setFont('helvetica','bold');d.setFontSize(8);d.text('TOTAL TO PAY',26,y+10);d.setFont('times','normal');d.setFontSize(24);d.text(N(x.total),184,y+18,{align:'right'});
+ y+=36;d.setFont('helvetica','normal');d.setFontSize(9);d.setTextColor(107,103,92);d.text(d.splitTextToSize('Your consultation fee is deducted from the project cost if you proceed with us. After paying, send your payment receipt to us on WhatsApp to confirm your slot.',174),18,y);
+ d.setFillColor(243,239,228);d.rect(0,277,210,20,'F');d.setTextColor(20,19,15);d.setFontSize(8);d.text('The Renaissance Agency Limited  |  Lugbe, Abuja, Nigeria  |  +234 704 136 5302  |  therenaissanceagencylimited@gmail.com',105,289,{align:'center'});
+ return new File([d.output('blob')],'Booking-Slip-'+S.ref+'.pdf',{type:'application/pdf'})}
+function download(f){const u=URL.createObjectURL(f),a=document.createElement('a');a.href=u;a.download=f.name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000)}
+async function sendSlip(btn){btn.disabled=true;btn.textContent='Preparing…';const x=priceFor();let f=null;try{f=makePDF()}catch(e){}
+ const text=`Hello Renaissance Agency, here is my booking slip.\nReference: ${S.ref}\nName: ${S.name}\nAmount to pay: ${fmt(x.total)}`;let reveal=true;
+ if(f&&navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f],text,title:'Booking slip '+S.ref})}catch(e){if(e&&e.name==='AbortError')reveal=false}}
+ else{if(f)download(f);window.open('https://wa.me/'+CONFIG.WHATSAPP+'?text='+encodeURIComponent(text+(f?'\n(PDF slip attached)':'')),'_blank')}
+ if(reveal){S.slip=true;render(true)}else{btn.disabled=false;btn.innerHTML='Create PDF &amp; send on WhatsApp'}}
+const validPhone=()=>{const d=S.phone.replace(/\D/g,'');return d.length>=10&&d.length<=14};
+const ok=()=>[S.svc!==null,S.proj!==null,S.scale!==null,!!S.area,!!S.date&&!!S.time,S.name.trim().length>1&&validPhone()][S.step]||false;
+function side(){const x=S.area&&S.scale!==null&&S.svc!==null?priceFor():null;
+ const r=[['Service',S.svc!==null&&SERVICES[S.svc][0]],['Project',S.proj!==null&&PROJECTS[S.proj][0]],['Size',S.scale!==null&&SCALES[S.scale][0]],['Location',locTxt()],['Date',S.date&&dateTxt()+(S.time?', '+S.time:'')]];
+ $('#sm').innerHTML=r.map(a=>`<div><span>${a[0]}</span><span class="${a[1]?'':'e'}">${a[1]?`<b>${a[1]}</b>`:'—'}</span></div>`).join('')+`<div class="tot"><span>TOTAL</span><span>${x?fmt(x.total):'<small style="font:400 13px Inter;color:#7C786A">After location</small>'}</span></div>`;
+ $('#fee').textContent=x?fmt(x.total):'After location'}
+function nav(){$('#nx').disabled=!ok()||S.sending;side()}
+function render(scroll){const fin=S.step===6;
+ $('#wb').innerHTML=fin?done():`<div class="stp"><span class="cap stepno">Step ${S.step+1} of 6 · ${NAMES[S.step]}</span><h2 class="serif">${T[S.step][0]}</h2><p class="lead">${T[S.step][1]}</p>${steps[S.step]()}</div>`;
+ $('#pg').style.width=Math.round((Math.min(S.step,5)+1)/6*100)+'%';$('#wf').style.display=fin?'none':'flex';$('#bkb').style.visibility=S.step?'visible':'hidden';
+ $('#nx').textContent=S.step===5?'Confirm booking':'Continue';nav();if(scroll)$('#wb').scrollTo({top:0,behavior:'smooth'})}
+const go=n=>{S.step=n;render(true)};
+async function submit(){S.sending=true;nav();$('#nx').textContent='Sending…';
+ S.ref='RTA-'+Date.now().toString(36).slice(-5).toUpperCase();const x=priceFor();
+ const data={access_key:CONFIG.WEB3FORMS_KEY,subject:`New booking ${S.ref}: ${SERVICES[S.svc][0]}`,from_name:'Renaissance Agency Website',reference:S.ref,
+  service:SERVICES[S.svc][0],project:PROJECTS[S.proj][0],size:SCALES[S.scale][0],location:locTxt(),distance_km:String(x.km),
+  consultation_fee:fmt(x.consult),transport_fee:fmt(x.transport),total:fmt(x.total),booking_date:dateTxt(),booking_time:S.time,
+  name:S.name.trim(),phone:S.phone.trim(),notes:S.notes.trim()||'None'};
+ const em=S.email.trim();if(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em))data.email=em;   // only send a real email, Web3Forms rejects invalid ones
+ const er=$('#err');if(er)er.style.display='none';
+ try{const r=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)});
+  let j={};try{j=await r.json()}catch(_){}
+  if(!r.ok||!j.success)throw new Error(j.message||('Error '+r.status));
+  S.sending=false;go(6)}
+ catch(e){S.sending=false;$('#nx').textContent='Confirm booking';nav();const er2=$('#err');
+  if(er2){er2.textContent='We couldn’t send your booking ('+(e.message||'network error')+'). Please try again or WhatsApp us.';er2.style.display='block'}}}
+$('#wb').addEventListener('click',e=>{const t=e.target.closest('[data-act]');if(!t||t.disabled)return;const a=t.dataset.act;
+ if(a==='slip'){sendSlip(t);return}if(a==='slip2'){const f=makePDF();if(f)download(f);return}
+ if(a==='copy'){navigator.clipboard&&navigator.clipboard.writeText(CONFIG.BANK.number);t.textContent='Copied';return}
+ if(a==='svc')S.svc=+t.dataset.i;else if(a==='proj')S.proj=+t.dataset.i;else if(a==='scale')S.scale=+t.dataset.i;
+ else if(a==='day'){S.date=t.dataset.d;S.time=null}else if(a==='time')S.time=t.dataset.t;
+ else if(a==='mp'){if(--S.month<0){S.month=11;S.year--}}else if(a==='mn'){if(++S.month>11){S.month=0;S.year++}}else return;render()});
+$('#wb').addEventListener('change',e=>{if(e.target.id==='state'){S.state=e.target.value||null;S.area=null;render()}else if(e.target.id==='area'){S.area=e.target.value||null;render()}});
+$('#wb').addEventListener('input',e=>{const k={nm:'name',ph:'phone',em:'email',nt:'notes'}[e.target.id];if(k){S[k]=e.target.value;nav()}});
+$('#wb').addEventListener('focusout',e=>{const id=e.target.id;if(id==='nm')e.target.classList.toggle('bad',S.name.trim().length<2);if(id==='ph')e.target.classList.toggle('bad',!validPhone())});
+$('#bkb').onclick=()=>S.step&&go(S.step-1);
+$('#nx').onclick=()=>{if(!ok())return;if(S.step<5)go(S.step+1);else{const h=$('#bot');if(h&&h.value)return;submit()}};
+const exv=$('#exv'),snd=$('#snd');snd.onclick=()=>{exv.muted=!exv.muted;snd.textContent=exv.muted?'Sound off':'Sound on'};
+const hv=$('#hv');const playHero=()=>hv.play().catch(()=>{});hv.addEventListener('canplay',playHero);playHero();['touchstart','click','scroll'].forEach(ev=>addEventListener(ev,playHero,{once:true,passive:true}));
+render(false);
 </script>
 </body>
 </html>
